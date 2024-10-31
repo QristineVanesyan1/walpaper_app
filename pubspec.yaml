@@ -1,0 +1,64 @@
+name: wallpaper_utility
+description: "A new Flutter project."
+publish_to: 'none' # Flutter version 🦋  3.22.1
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
+  equatable: ^2.0.5
+  uuid: ^4.5.1
+  shared_preferences: ^2.3.2
+  in_app_review: ^2.0.9
+  share_plus: ^10.0.3
+  app_settings: ^5.1.1
+  intl: ^0.19.0
+  freezed: ^2.5.2
+  dio: ^5.7.0
+  riverpod: ^2.5.3
+  flutter_riverpod: ^2.5.3
+  shimmer: ^3.0.0
+  device_info_plus: ^11.0.0
+  permission_handler: ^11.3.1
+  image_gallery_saver: ^2.0.3
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.4.11
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/svg/
+    - assets/json/
+
+
+  fonts:
+    - family: Onest
+      fonts:
+        - asset: fonts/Onest-Regular.ttf
+        - asset: fonts/Onest-Black.ttf
+          weight: 900
+        - asset: fonts/Onest-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Onest-Bold.ttf
+          weight: 700
+        - asset: fonts/Onest-SemiBold.ttf
+          weight: 600
