@@ -1,4 +1,4 @@
-# affirmation_utility
+# wallpaper_utility
 
 A new Flutter project.
 

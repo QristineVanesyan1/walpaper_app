@@ -1,11 +1,11 @@
-import 'package:affirmation_utility/core/local_data_source.dart';
+import 'package:wallpaper_utility/core/local_data_source.dart';
 
 abstract class UserRepository {
   Future<List<String>> getFavLinkList();
   Future<void> addFavLink(String link);
   Future<void> removeFavLink(String link);
   Future<void> clearAllData();
-  Future<List<String>> getAffirmationsByCategory(String category);
+  Future<List<String>> getWallpapersByCategory(String category);
 }
 
 class UserRepositoryImpl extends UserRepository {
@@ -18,8 +18,8 @@ class UserRepositoryImpl extends UserRepository {
   }
 
   @override
-  Future<List<String>> getAffirmationsByCategory(String category) async {
-    return await localDataSource.getAllAffirmations(category);
+  Future<List<String>> getWallpapersByCategory(String category) async {
+    return await localDataSource.getAllWallpapers(category);
   }
 
   @override

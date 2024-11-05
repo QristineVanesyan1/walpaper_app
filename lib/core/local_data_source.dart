@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:affirmation_utility/models/affirmation_item/affirmation_item.dart';
+import 'package:wallpaper_utility/models/wallpaper_item/wallpaper_item.dart';
 import '../configs/configs.dart';
 
 abstract class LocalDataSource {
@@ -11,7 +11,7 @@ abstract class LocalDataSource {
   Future<void> removeFavLink(String link);
 
   Future<void> clearAllData();
-  Future<List<String>> getAllAffirmations(String category);
+  Future<List<String>> getAllWallpapers(String category);
 }
 
 class LocalDataSourceImpl extends LocalDataSource {
@@ -24,17 +24,17 @@ class LocalDataSourceImpl extends LocalDataSource {
   }
 
   @override
-  Future<List<String>> getAllAffirmations(String category) async {
+  Future<List<String>> getAllWallpapers(String category) async {
     List<String>? linksByCategory = sharedPreferences.getStringList(category);
     if (linksByCategory == null) {
       String dataStr = await rootBundle.loadString(Assets.info);
       List<dynamic> dataList = jsonDecode(dataStr);
-      List<AffirmationItem> affirmations =
-          dataList.map((e) => AffirmationItem.fromJson(e)).toList();
+      List<WallpaperItem> wallpapers =
+          dataList.map((e) => WallpaperItem.fromJson(e)).toList();
 
-      for (var i = 0; i < affirmations.length; i++) {
+      for (var i = 0; i < wallpapers.length; i++) {
         await sharedPreferences.setStringList(
-            affirmations[i].category, affirmations[i].links);
+            wallpapers[i].category, wallpapers[i].links);
       }
       return sharedPreferences.getStringList(category) ?? [];
     } else {

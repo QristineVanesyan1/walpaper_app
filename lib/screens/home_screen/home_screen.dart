@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:affirmation_utility/components/app_bar_widget.dart';
-import 'package:affirmation_utility/components/app_loading.dart';
-import 'package:affirmation_utility/components/category_card_widget.dart';
-import 'package:affirmation_utility/components/affirmation_image.dart';
-import 'package:affirmation_utility/configs/configs.dart';
-import 'package:affirmation_utility/screens/details_screen/details_screen.dart';
-import 'package:affirmation_utility/screens/home_screen/home_notifier/home_notifier.dart';
-import 'package:affirmation_utility/screens/main_screen/main_screen.dart';
-import 'package:affirmation_utility/shared/provider.dart';
+import 'package:wallpaper_utility/components/app_bar_widget.dart';
+import 'package:wallpaper_utility/components/app_loading.dart';
+import 'package:wallpaper_utility/components/category_card_widget.dart';
+import 'package:wallpaper_utility/components/wallpaper_image.dart';
+import 'package:wallpaper_utility/configs/configs.dart';
+import 'package:wallpaper_utility/screens/details_screen/details_screen.dart';
+import 'package:wallpaper_utility/screens/home_screen/home_notifier/home_notifier.dart';
+import 'package:wallpaper_utility/screens/main_screen/main_screen.dart';
+import 'package:wallpaper_utility/shared/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       : Column(
                           children: [
                             AppBarWidget(
-                              title: AppTexts.affirmation,
+                              title: AppTexts.wallpaper,
                               child: ListView.separated(
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 16.0),
@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.all(16.0),
                                   itemCount: list.length,
                                   itemBuilder: (context, index) {
-                                    return AffirmationImage(
+                                    return WallpaperImage(
                                         key: ValueKey(index),
                                         onTap: () {
                                           Navigator.of(context).push(

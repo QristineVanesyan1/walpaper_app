@@ -1,4 +1,4 @@
-package com.example.affirmation_utility
+package com.example.wallpaper_utility
 
 import io.flutter.embedding.android.FlutterActivity
 

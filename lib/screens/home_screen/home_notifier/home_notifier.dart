@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:riverpod/riverpod.dart';
-import 'package:affirmation_utility/configs/configs.dart';
-import 'package:affirmation_utility/repos/auth_repo.dart';
+import 'package:wallpaper_utility/configs/configs.dart';
+import 'package:wallpaper_utility/repos/auth_repo.dart';
 
 part 'home_notifier.freezed.dart';
 part 'home_state.dart';
@@ -27,7 +27,7 @@ class HomeNotifier extends StateNotifier<HomeState> {
         _selectedCategory = category;
       }
 
-      list = await _repository.getAffirmationsByCategory(_selectedCategory!);
+      list = await _repository.getWallpapersByCategory(_selectedCategory!);
       state = HomeState.fetched(list, _selectedCategory!);
     } catch (e) {
       state = HomeState.errorState(e.toString());

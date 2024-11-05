@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:affirmation_utility/components/bottom.dart';
-import 'package:affirmation_utility/screens/fav_screen/fav_screen.dart';
-import 'package:affirmation_utility/screens/home_screen/home_screen.dart';
-import 'package:affirmation_utility/screens/settings_screen/settings_screen.dart';
+import 'package:wallpaper_utility/components/bottom.dart';
+import 'package:wallpaper_utility/screens/fav_screen/fav_screen.dart';
+import 'package:wallpaper_utility/screens/home_screen/home_screen.dart';
+import 'package:wallpaper_utility/screens/settings_screen/settings_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

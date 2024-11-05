@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-class AffirmationImage extends StatelessWidget {
-  const AffirmationImage({super.key, required this.link, this.onTap});
+class WallpaperImage extends StatelessWidget {
+  const WallpaperImage({super.key, required this.link, this.onTap});
   final String link;
   final VoidCallback? onTap;
   @override

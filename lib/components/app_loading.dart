@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:affirmation_utility/configs/assets.dart';
+import 'package:wallpaper_utility/configs/assets.dart';
 
 class LoadingWidget extends StatefulWidget {
   const LoadingWidget({super.key});

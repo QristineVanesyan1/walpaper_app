@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:affirmation_utility/configs/configs.dart';
+import 'package:wallpaper_utility/configs/configs.dart';
 
 class IconWidget extends StatelessWidget {
   const IconWidget({super.key, required this.iconPath, required this.onTap});
