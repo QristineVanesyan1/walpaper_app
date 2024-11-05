@@ -1,8 +1,10 @@
 class AppTexts {
+  static const String userPhoto = "User Photo";
   static const String sww = "Something went wrong";
   static const String notifications = "Notifications";
   static const String settings = "App  Settings";
-
+  static const String uploadFromGallery = "Upload from Gallery";
+  static const String takeAPhoto = "Take a Photo";
   static const String privacyPolicy = "Privacy Policy";
   static const String termOfUse = "Terms of use";
   static const String rateUs = "Rate us";

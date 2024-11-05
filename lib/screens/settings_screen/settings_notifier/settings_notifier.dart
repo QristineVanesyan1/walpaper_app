@@ -9,7 +9,7 @@ import 'package:in_app_review/in_app_review.dart';
 import 'package:riverpod/riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:wallpaper_utility/configs/app_consts.dart';
-import 'package:wallpaper_utility/repos/auth_repo.dart';
+import 'package:wallpaper_utility/repos/user_repo.dart';
 
 part 'settings_notifier.freezed.dart';
 part 'settings_state.dart';

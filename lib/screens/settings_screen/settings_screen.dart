@@ -93,7 +93,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     SettingsOption(
                       title: AppTexts.clearData,
                       onTap: () {
-                        AppDialogs.showDialog(context,
+                        AppDialogs.showDialog_(context,
                             title: AppTexts.clearData,
                             message: AppTexts.clearDataMsg,
                             rightButtonText: AppTexts.clearData,
