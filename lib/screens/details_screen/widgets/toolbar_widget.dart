@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_utility/configs/configs.dart';
-import 'package:wallpaper_utility/screens/details_screen/widgets/icon_widget.dart';
+import 'package:affirmation_utility/configs/configs.dart';
+import 'package:affirmation_utility/screens/details_screen/widgets/icon_widget.dart';
 
 class ToolbarWidget extends StatelessWidget {
   const ToolbarWidget(

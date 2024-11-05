@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wallpaper_utility/components/app_bar_widget.dart';
-import 'package:wallpaper_utility/components/app_dialogs.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/configs/app_texts.dart';
-import 'package:wallpaper_utility/configs/assets.dart';
-import 'package:wallpaper_utility/screens/main_screen/main_screen.dart';
-import 'package:wallpaper_utility/screens/settings_screen/settings_notifier/settings_notifier.dart';
-import 'package:wallpaper_utility/screens/terms_of_use_screen/privacy_policy_screen.dart';
-import 'package:wallpaper_utility/screens/terms_of_use_screen/terms_of_use_screen.dart';
-import 'package:wallpaper_utility/shared/provider.dart';
+import 'package:affirmation_utility/components/app_bar_widget.dart';
+import 'package:affirmation_utility/components/app_dialogs.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/configs/app_texts.dart';
+import 'package:affirmation_utility/configs/assets.dart';
+import 'package:affirmation_utility/screens/main_screen/main_screen.dart';
+import 'package:affirmation_utility/screens/settings_screen/settings_notifier/settings_notifier.dart';
+import 'package:affirmation_utility/screens/terms_of_use_screen/privacy_policy_screen.dart';
+import 'package:affirmation_utility/screens/terms_of_use_screen/terms_of_use_screen.dart';
+import 'package:affirmation_utility/shared/provider.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

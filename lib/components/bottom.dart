@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/configs/assets.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/configs/assets.dart';
 
 class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar(

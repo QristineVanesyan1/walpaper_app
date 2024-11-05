@@ -7,7 +7,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:riverpod/riverpod.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:wallpaper_utility/repos/auth_repo.dart';
+import 'package:affirmation_utility/repos/auth_repo.dart';
 
 part 'details_notifier.freezed.dart';
 part 'details_state.dart';

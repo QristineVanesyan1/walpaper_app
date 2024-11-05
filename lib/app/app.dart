@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_utility/configs/configs.dart';
+import 'package:affirmation_utility/configs/configs.dart';
 
 import '../screens/main_screen/main_screen.dart';
 
@@ -16,7 +16,8 @@ class _AppState extends State<App> {
     return MaterialApp(
       builder: (context, child) {
         return MediaQuery(
-          data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
+          data: MediaQuery.of(context)
+              .copyWith(textScaler: const TextScaler.linear(1.0)),
           child: child!,
         );
       },

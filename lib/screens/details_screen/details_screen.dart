@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:wallpaper_utility/components/app_dialogs.dart';
-import 'package:wallpaper_utility/components/wallpaper_image.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/screens/details_screen/notifier/details_notifier.dart';
-import 'package:wallpaper_utility/screens/details_screen/widgets/toolbar_widget.dart';
-import 'package:wallpaper_utility/screens/home_screen/home_screen.dart';
-import 'package:wallpaper_utility/shared/provider.dart';
+import 'package:affirmation_utility/components/app_dialogs.dart';
+import 'package:affirmation_utility/components/affirmation_image.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/screens/details_screen/notifier/details_notifier.dart';
+import 'package:affirmation_utility/screens/details_screen/widgets/toolbar_widget.dart';
+import 'package:affirmation_utility/screens/home_screen/home_screen.dart';
+import 'package:affirmation_utility/shared/provider.dart';
 import 'dart:ui' as ui;
 
 class DetailsScreen extends ConsumerStatefulWidget {
@@ -67,7 +67,7 @@ class _DetailsScreenState extends ConsumerState<DetailsScreen> {
                         },
                         controller: _pageController,
                         itemBuilder: (BuildContext context, int index) =>
-                            WallpaperImage(
+                            AffirmationImage(
                           link: links[index],
                         ),
                       );

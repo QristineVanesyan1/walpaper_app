@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wallpaper_utility/configs/configs.dart';
+import 'package:affirmation_utility/configs/configs.dart';
 
 class AppDialogs {
   static Future<dynamic> permissionFailDialog(

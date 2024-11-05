@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:wallpaper_utility/components/app_bar_widget.dart';
-import 'package:wallpaper_utility/components/wallpaper_image.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/configs/app_texts.dart';
-import 'package:wallpaper_utility/screens/details_screen/details_screen.dart';
-import 'package:wallpaper_utility/screens/fav_screen/notifier/fav_notifier.dart';
-import 'package:wallpaper_utility/screens/home_screen/home_screen.dart';
-import 'package:wallpaper_utility/screens/main_screen/main_screen.dart';
-import 'package:wallpaper_utility/shared/provider.dart';
+import 'package:affirmation_utility/components/app_bar_widget.dart';
+import 'package:affirmation_utility/components/affirmation_image.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/configs/app_texts.dart';
+import 'package:affirmation_utility/screens/details_screen/details_screen.dart';
+import 'package:affirmation_utility/screens/fav_screen/notifier/fav_notifier.dart';
+import 'package:affirmation_utility/screens/home_screen/home_screen.dart';
+import 'package:affirmation_utility/screens/main_screen/main_screen.dart';
+import 'package:affirmation_utility/shared/provider.dart';
 
 class FavScreen extends StatefulWidget {
   const FavScreen({super.key});
@@ -90,7 +90,7 @@ class _FavScreenState extends State<FavScreen> {
                                     padding: const EdgeInsets.all(16.0),
                                     itemCount: list.length,
                                     itemBuilder: (context, index) {
-                                      return WallpaperImage(
+                                      return AffirmationImage(
                                           onTap: () {
                                             Navigator.of(context)
                                                 .push(MaterialPageRoute(
@@ -122,7 +122,7 @@ class _FavScreenState extends State<FavScreen> {
                                             right: 16,
                                             left: 16),
                                         child: Text(
-                                          "You haven't added any wallpapers to your favorites yet. Go to the Home screen and pick the images you like.",
+                                          "You haven't added any affirmations to your favorites yet. Go to the Home screen and pick the images you like.",
                                           textAlign: TextAlign.center,
                                           style: Theme.of(context)
                                               .textTheme

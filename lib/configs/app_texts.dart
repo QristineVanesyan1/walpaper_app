@@ -12,7 +12,7 @@ class AppTexts {
   static const String dontAllow = "Don’t Allow";
 
   static const String yourFavorites = "Your Favorites";
-  static const String wallpaper = "Wallpaper in One Place";
+  static const String affirmation = "Affirmation in One Place";
   static const String allow = "Allow access";
   static const String allowMsg = "Allow this app to access your phone gallery?";
 

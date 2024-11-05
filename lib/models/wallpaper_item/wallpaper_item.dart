@@ -1,18 +1,18 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'wallpaper_item.g.dart';
+part 'affirmation_item.g.dart';
 
 @JsonSerializable()
-class WallpaperItem {
+class AffirmationItem {
   final String category;
   final List<String> links;
 
-  WallpaperItem({
+  AffirmationItem({
     required this.category,
     required this.links,
   });
-  factory WallpaperItem.fromJson(Map<String, dynamic> json) =>
-      _$WallpaperItemFromJson(json);
+  factory AffirmationItem.fromJson(Map<String, dynamic> json) =>
+      _$AffirmationItemFromJson(json);
 
-  Map<String, dynamic> toJson() => _$WallpaperItemToJson(this);
+  Map<String, dynamic> toJson() => _$AffirmationItemToJson(this);
 }

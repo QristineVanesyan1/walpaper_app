@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/configs/assets.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/configs/assets.dart';
 
 class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key, required this.title, this.child, this.onLeading});
+  const AppBarWidget(
+      {super.key, required this.title, this.child, this.onLeading});
   final String title;
   final Widget? child;
   final VoidCallback? onLeading;
@@ -13,7 +14,8 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          border: Border(bottom: BorderSide(width: 2, color: AppColors.layer2)), color: AppColors.layer1),
+          border: Border(bottom: BorderSide(width: 2, color: AppColors.layer2)),
+          color: AppColors.layer1),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -25,7 +27,9 @@ class AppBarWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
             child: Row(
-              mainAxisAlignment: onLeading != null ? MainAxisAlignment.spaceBetween : MainAxisAlignment.center,
+              mainAxisAlignment: onLeading != null
+                  ? MainAxisAlignment.spaceBetween
+                  : MainAxisAlignment.center,
               children: [
                 if (onLeading != null)
                   InkWell(

@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wallpaper_utility/app/app.dart';
-import 'package:wallpaper_utility/shared/provider.dart';
+import 'package:affirmation_utility/app/app.dart';
+import 'package:affirmation_utility/shared/provider.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

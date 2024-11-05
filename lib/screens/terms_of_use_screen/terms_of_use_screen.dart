@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:wallpaper_utility/components/app_bar_widget.dart';
-import 'package:wallpaper_utility/configs/app_colors.dart';
-import 'package:wallpaper_utility/configs/app_texts.dart';
+import 'package:affirmation_utility/components/app_bar_widget.dart';
+import 'package:affirmation_utility/configs/app_colors.dart';
+import 'package:affirmation_utility/configs/app_texts.dart';
 
 class TermsOfUseScreen extends StatefulWidget {
   const TermsOfUseScreen({super.key});
@@ -37,7 +37,8 @@ class _TermsOfUseScreenState extends State<TermsOfUseScreen> {
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium
-                            ?.copyWith(color: AppColors.textPrimary, height: 1.3),
+                            ?.copyWith(
+                                color: AppColors.textPrimary, height: 1.3),
                       ),
                       const SizedBox(height: 8),
                       Text(
@@ -45,7 +46,8 @@ class _TermsOfUseScreenState extends State<TermsOfUseScreen> {
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium
-                            ?.copyWith(color: AppColors.textPrimary, height: 1.3),
+                            ?.copyWith(
+                                color: AppColors.textPrimary, height: 1.3),
                       ),
                       const SizedBox(height: 8),
                       Text(
@@ -53,7 +55,8 @@ class _TermsOfUseScreenState extends State<TermsOfUseScreen> {
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium
-                            ?.copyWith(color: AppColors.textPrimary, height: 1.3),
+                            ?.copyWith(
+                                color: AppColors.textPrimary, height: 1.3),
                       ),
                       const SizedBox(height: 8),
                       Text(
@@ -61,7 +64,8 @@ class _TermsOfUseScreenState extends State<TermsOfUseScreen> {
                         style: Theme.of(context)
                             .textTheme
                             .displayMedium
-                            ?.copyWith(color: AppColors.textPrimary, height: 1.3),
+                            ?.copyWith(
+                                color: AppColors.textPrimary, height: 1.3),
                       ),
                     ],
                   )),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_utility/components/app_loading.dart';
-import 'package:wallpaper_utility/screens/main_screen/main_screen.dart';
+import 'package:affirmation_utility/components/app_loading.dart';
+import 'package:affirmation_utility/screens/main_screen/main_screen.dart';
 
 class PreloaderScreen extends StatefulWidget {
   const PreloaderScreen({super.key});
